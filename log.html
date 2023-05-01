@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <title>adp2 of sk</title>
+    <script src="https://kit.fontawesome.com/dfbca815e0.js" crossorigin="anonymous"></script>
+
+</head>
+<nav>
+    <img src="logo.png" class="logo" class="logo">
+</nav>
+    <body>
+        <div class="container">
+            <div class="form-box">
+               
+             
+                <h1 id="title">Login to navigate to UNPACKED'23</h1>
+                <form-1>
+                    <div class="input-group">
+                        <div class="input-field" id="nameField">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="Name">
+                        </div>
+    
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Email">
+                        </div>
+    
+                        <div class="input-field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <p>Lost Password <a href="#">Click Here!</a></p>
+                       
+                    </div>
+                    <a href="#">
+                        <button type="button" id="signupBtn">Register<span></span></button>
+                        </a>
+                    <a href="#">
+                        <button type="button"id="loginBtn" class="disable" >Sign in<span></span></button>
+                        </a>
+                 </form-1>
+                 <h4>Click Proceed to witness the UNPACKED'23</h4>
+                 <a href="5.html" target="_blank">
+                    <button type="button"id="loginBtn" class="disable" >Proceed<span></span></button>
+                    </a>
+            </div>
+            
+        </div>
+    
+    <script>
+    
+        let signupBtn = document.getElementById("signupBtn");
+        let loginBtn = document.getElementById("loginBtn");
+        let nameField = document.getElementById("nameField");
+        let title = document.getElementById("title");
+    
+        loginBtn.onclick = function(){
+            nameField.style.maxHeight = "0";
+            title.innerHTML = "Log In";
+            signupBtn.classList.add("disable");
+            loginBtn.classList.remove("disable");
+        }
+        signupBtn.onclick = function(){
+        nameField.style.maxHeight = "60px";
+        title.innerHTML = "Sign Up";
+        signupBtn.classList.remove("disable");
+        loginBtn.classList.add("disable");
+        }
+    
+    
+    </script>
+    
+
+
+</body>
